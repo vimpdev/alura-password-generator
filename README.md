@@ -4,7 +4,7 @@ Este proyecto forma parte del programa ***Inmersión Dev***, desarrollado por **
 
 ![Generador de contraseñas](./assets/video/sample.gif)
 
-## *Objetivo* :target:
+## *Objetivo* :dart:
 
 🔳 Desarrollar una aplicación que genere contraseñas aleatorias según los requisitos especificados.
 
