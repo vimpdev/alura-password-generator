@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Contraseñas</title>
+
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script type="module" src="./index.js" defer></script>
+</head>
+<body class="body">
+  <main class="main">
+    <h1 class="title">Generador de <span class="accent">Contraseñas</span></h1>
+
+    <form action="#" id="form" class="form">
+      <div id="options" class="options grid">
+        <div class="field grid">
+          <label for="length" class="label">Longitud</label>
+          <input type="number" name="length" id="length" min="6" max="30" placeholder="0" class="length" required>
+          <p class="hide" id="clue">Ingresa un número entre 6 - 30.</p>
+        </div>
+        <div class="field grid">
+          <label for="uppercase" class="label">A-Z</label>
+          <input type="checkbox" name="uppercase" id="uppercase" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" class="checkbox">
+        </div>
+        <div class="field grid">
+          <label for="lowercase" class="label">a-z</label>
+          <input type="checkbox" name="lowercase" id="lowercase" value="abcdefghijklmnopqrstuvwxyz" class="checkbox">
+        </div>
+        <div class="field grid">
+          <label for="number" class="label">0-9</label>
+          <input type="checkbox" name="number" id="number" value="0123456789" class="checkbox">
+        </div>
+        <div class="field grid">
+          <label for="special" class="label">!@#$%^&*</label>
+          <input type="checkbox" name="special" id="special" value="!@#$%^&*()_+-={}|;:\,.<>?/" class="checkbox">
+        </div>
+      </div>
+
+      <div class="result-container grid">
+        <button type="submit" id="generate-btn" class="generate-btn button" disabled>Generar</button>
+        <button type="reset" id="clean-btn" class="clean-btn button" disabled>Limpiar</button>
+
+        <textarea name="password" id="password" rows="2" placeholder="** C0NTR4SEÑ4 **" class="result-tarea" readonly></textarea>
+        
+        <div class="password-strength grid">
+          <span id="strength-weak" class="strength">Débil</span>
+          <span id="strength-medium" class="strength">Intermedio</span>
+          <span id="strength-strong" class="strength">Fuerte</span>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="attribution">
+    <small>InmersionDev por <a href="https://www.aluracursos.com/inmersion-dev" target="_blank" rel="noopener noreferrer" class="attribution-cta">Alura</a> - Desarrollado por <a href="https://github.com/vimpdev/alura-password-generator" target="_blank" rel="noopener noreferrer" class="attribution-cta">VIMP</a></small>
+  </footer>
+</body>
+</html>
