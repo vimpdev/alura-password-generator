@@ -26,34 +26,38 @@ Este proyecto forma parte del programa ***Inmersión Dev***, desarrollado por **
 
 ![Desktop result](./assets/screenshot/desktop-result.avif)
 
+## *Links* :link:
+
+[Live site URL](https://vimpdev.github.io/inmersion-alura-password-generator/) 👀
+
 ## *Pasos* :footprints:
 
 ### *Funciones*
-1️⃣ Obtener la longitud deseada para la contraseña: `function getPasswordLength()`.
+1. Obtener la longitud deseada para la contraseña: `function getPasswordLength()`.
 
-2️⃣ Crear la ***base*** de caracteres con los que se generará la contraseña.
+1. Crear la ***base*** de caracteres con los que se generará la contraseña.
 
-3️⃣ Activar el botón ***Generar*** después de validar que se ha ingresado una longitud y se ha seleccionado al menos una opción.
+1. Activar el botón ***Generar*** después de validar que se ha ingresado una longitud y se ha seleccionado al menos una opción.
 
-4️⃣ Genera la contraseña utilizando la longitud y la base de caracteres previamente definidas.
+1. Genera la contraseña utilizando la longitud y la base de caracteres previamente definidas.
 
-5️⃣ Mostrar la contraseña generada en el ***textarea***.
+1. Mostrar la contraseña generada en el ***textarea***.
 
-6️⃣ Limpiar los campos: ***longitud***, ***textarea***; desactivar los ***checkboxes*** y el botón ***Generar***.
+1. Limpiar los campos: ***longitud***, ***textarea***; desactivar los ***checkboxes*** y el botón ***Generar***.
 
-7️⃣ Asignar y mostrar la ***fortaleza*** de la contraseña generada.
+1. Asignar y mostrar la ***fortaleza*** de la contraseña generada.
 
 ### *Eventos*
 
-1️⃣ `DOMContentLoaded` - al cargar la página el botón ***Generar*** se muestra desactivado.
+1. `DOMContentLoaded` - al cargar la página el botón ***Generar*** se muestra desactivado.
 
-2️⃣ `input` - obtener la longitud de la contraseña.
+1. `input` - obtener la longitud de la contraseña.
 
-3️⃣ `change` - crear la cadena de caracteres *base*.
+1. `change` - crear la cadena de caracteres *base*.
 
-4️⃣ `submit` - generar la contraseña.
+1. `submit` - generar la contraseña.
 
-5️⃣ `reset` - limpiar los campos y desactivar los checkboxes.
+1. `reset` - limpiar los campos y desactivar los checkboxes.
 
 ## Lo que he aprendido :nerd_face:
 
@@ -96,10 +100,6 @@ $checkBoxes.forEach( checkBox => {
 ```
 
 📌 `blur` - se activa cuando el elemento pierde el foco, sin importar si el valor ha cambiado.
-
-## *Links* :link:
-
-[Live site URL](https://vimpdev.github.io/alura-password-generator/) 👀
 
 ## *Recursos* :card_file_box:
 
