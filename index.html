@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generador de Contraseñas</title>
 
+  <link rel="icon" href="./assets/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/favicon/favicon.svg">
+
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/index.css">
 
-  <script type="module" src="./index.js" defer></script>
+  <script type="module" src="./js/index.js" defer></script>
 </head>
 <body class="body">
   <main class="main">
     <h1 class="title">Generador de <span class="accent">Contraseñas</span></h1>
 
     <form action="#" id="form" class="form">
-      <div id="options" class="options grid">
+      <fieldset id="options" class="options grid" aria-labelledby="form-options">
+        <legend id="form-options" class="sr-only">Opciones de generación de contraseña.</legend>
         <div class="field grid">
           <label for="length" class="label">Longitud</label>
-          <input type="number" name="length" id="length" min="6" max="30" placeholder="0" class="length" required>
+          <input type="number" name="length" id="length" min="6" max="30" placeholder="0" class="length" aria-describedby="clue" required>
           <p class="hide" id="clue">Ingresa un número entre 6 - 30.</p>
         </div>
         <div class="field grid">
@@ -37,17 +41,17 @@
           <label for="special" class="label">!@#$%^&*</label>
           <input type="checkbox" name="special" id="special" value="!@#$%^&*()_+-={}|;:\,.<>?/" class="checkbox">
         </div>
-      </div>
+      </fieldset>
 
       <div class="result-container grid">
-        <button type="submit" id="generate-btn" class="generate-btn button" disabled>Generar</button>
-        <button type="reset" id="clean-btn" class="clean-btn button" disabled>Limpiar</button>
+        <button type="submit" id="generate-btn" class="generate-btn button" aria-disabled="true">Generar</button>
+        <button type="reset" id="clean-btn" class="clean-btn button" aria-disabled="true">Limpiar</button>
 
-        <textarea name="password" id="password" rows="2" placeholder="** C0NTR4SEÑ4 **" class="result-tarea" readonly></textarea>
+        <textarea name="password" id="password" rows="2" placeholder="** C0NTR4SEÑ4 **" class="result-tarea" aria-label="Contraseña generada." readonly></textarea>
         
-        <div class="password-strength grid">
+        <div class="password-strength grid" aria-live="polite">
           <span id="strength-weak" class="strength">Débil</span>
-          <span id="strength-medium" class="strength">Intermedio</span>
+          <span id="strength-medium" class="strength">Regular</span>
           <span id="strength-strong" class="strength">Fuerte</span>
         </div>
       </div>
